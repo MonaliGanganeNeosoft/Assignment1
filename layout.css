@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+.navibar{
+    background-image: url(pic/3488415.jpg);
+    height: 68px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.inner_navibar ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 23px;
+}
+.inner_navibar ul li{
+    display: inline-block;
+}
+.inner_navibar ul li:nth-child(1){
+    /* float: left; */
+    display: inline-block;
+}
+.inner_navibar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid blueviolet;
+    transition: 0.6 ease;
+}
+.inner_navibar ul li a:hover{
+    background-color: #fff;
+    color:black;
+}
+
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.slogan{
+    color:#bbbbbb;
+    float:left;
+    position: relative;
+    top : 30%;
+    translate: translateY(-50%);
+}
+
+.Img{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(pic/p1.jpg);
+    height: 400px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+}
+.title{
+    position: absolute;
+    top: 35%;
+    left:50%;
+    transform:translate(-50%,-50%);
+} 
+
+.title h1{
+    color:white;
+    font-size: 45px;
+    text-align: center;
+}
+.title p{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    
+    
+}
+.button{
+    position: absolute;
+    top:150%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.btn1{
+    border: 1px solid blueviolet;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6 ease;
+    background-color:greenyellow;
+}
+.btn2{
+    border: 1px solid blueviolet;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6 ease;
+    background-color:rgba(10, 137, 241, 0.966);
+    margin-left: 20px;
+}
+.btn1:hover{
+    background-color: #fff;
+    color:black;
+
+}
+.btn2:hover{
+    background-color: #fff;
+    color:black;
+
+}
+.clr{
+    clear: both;
+}
+
+
+
+.maincontent .row, .footer .row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer{
+	background-color: #24262b;
+    padding: 20px 0;
+}
+.footer-col{
+   width: 20%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.maincontent .container{
+    padding : 3% 8%;
+}
+
+.maincontent .col{
+    /* padding:1.57%; */
+    margin:auto;
+    width:30%;
+}
+
+.maincontent .card{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    align-content: center;
+
+    border: #e91e63 1px solid;
+    border-radius: 15px;
+}
+
+.maincontent img{
+    width: 100%;
+}
+
+.maincontent .description{
+    display: flex;
+}
+
+.maincontent .description h3{
+    float:inline-start;
+}
+
+.maincontent .description img{
+    width: 25%;
+    margin-top: 5px;
+    margin-right: 10px;
+    object-fit: cover;
+    width:67px;
+    height:67px;
+}
+
+.maincontent hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.maincontent .namecard{
+    border-color: #fff !important;
+}
+
+.maincontent .namecard .description img{
+    object-fit: cover;
+    width:67px;
+    height:67px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.maincontent .namecard li:first-child{
+    color: gray;
+}
+
+.maincontent .companylogo{
+    display: flex;
+}
+
+.maincontent .companylogo img{
+    margin:auto;
+    width:15%;
+}
+
+
+@media screen and (min-width: 0px) and (max-width:1300px){
+    .button{
+        position: relative;
+        top:180%;
+        left:50%;
+        transform: translate(-50%,150%);
+    }
+}
